@@ -1,0 +1,51 @@
+<!DOCTYPE HTML>
+
+<html>
+	<head>
+		<title>Hugo van der Geest</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets/css/main.css" />
+		<noscript><link rel="stylesheet" href="assets/css/noscript.css" /></noscript>
+	</head>
+	<body class="is-preload">
+		<div id="wrapper">
+
+			<div>
+				<img class="banana" src="assets/css/images/banana.png" alt="">
+			</div>
+
+			<div id="overlay"></div>
+			<div id="main">
+
+               <a class="copy top-left " href="index.html"><span class="fa fa-arrow-left"></span>  Back</a>
+
+				<!-- Header -->
+					<header id="header">
+						<!-- The text field -->
+                        <h2>Discord tag</h2>
+                        <h1 id="copy">нuԍo#1558</h1>
+                        <button class="copy" type="button" onclick="copyEvent('copy')">Copy</button>
+                        
+                        <script>
+                            function copyEvent(id)
+                            {
+                                var str = document.getElementById(id);
+                                window.getSelection().selectAllChildren(str);
+                                document.execCommand("Copy")
+                            }
+                        </script>
+						</nav>
+					</header>
+
+
+
+			</div>
+		</div>
+		<script>
+			window.onload = function() { document.body.classList.remove('is-preload'); }
+			window.ontouchmove = function() { return false; }
+			window.onorientationchange = function() { document.body.scrollTop = 0; }
+		</script>
+	</body>
+</html>
